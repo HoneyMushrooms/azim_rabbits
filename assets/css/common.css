@@ -1,0 +1,116 @@
+:root {
+    --base-cristal-white:#FFFFFF;
+    --base-rich-black: #222222;
+    --base-gray-gray_50: #9393A3;
+    --base-gray-gray_40: #BCBCCC;
+    --base-gray-gray_20: #F5F5FF;
+    --base-gray-gray_10: #FAFAFF; 
+    
+    --brandbook-main: #7573F6;
+    --brandbook-secoond: #9ED6A1;
+    --brandbook-more: #F22A52;
+    
+    --buttons-yellow: #FEE000;
+    --buttons-violet: #7B61FF;
+
+    --cornersL: 20px;
+    --cornersxs: 8px;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    padding: 0 80px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 80px;
+    margin-top: 15px;
+}
+
+input::placeholder {
+    color: var(--base-rich-black);
+    opacity: 1;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.title_size_xs {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.title_size_s {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.title_size_m {
+    font-size: 28px;
+    line-height: 44px;
+}
+
+.title_color_base-cristal-white {
+    color: var(--base-cristal-white);
+}
+
+.title_color_base-rich-black {
+    color: var(--base-rich-black);
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1360px;
+        padding: 0 clamp(1.25rem, -3.615rem + 10.14vw, 5rem);
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        gap: 60px;
+        margin-bottom: 70px;
+        margin-top: 23px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        gap: 60px;
+        margin-bottom: 70px;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+
+    .title_size_m {
+        font-size: 19px;
+        line-height: 25.95px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .container {
+        padding: 0 10px;
+    }  
+
+    .wrapper {
+        gap: 30px;
+        margin-bottom: 20px;
+        margin-top: 14px;
+    }  
+
+    .title_size_s {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+}
